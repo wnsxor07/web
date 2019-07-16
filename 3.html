@@ -1,11 +1,23 @@
 <!DoCTYPE HTML>
 <html>
   <head>
-    <title>WEB1 - HTML</title>
+    <title>WEB1 - JavaScript</title>
     <meta charset="utf-8">
   </head>
   <body>
-    <h1><a href="index.html">WEB</a><h1>
+    <h1><a href="index.html">WEB</a></h1>
+    <input id="night_day" type="button" value="night" onclick="
+    var target = document.querySelector('body');
+    if(this.value === 'night') {
+      target.style.backgroundColor='black';
+      target.style.color='white';
+      this.value='day';
+    } else {
+      target.style.backgroundColor='white';
+      target.style.color='black';
+      this.value='night';
+    }
+    ">
     <ol>
       <li><a href="1.html">HTML</a></li>
       <li><a href="2.html">CSS</a></li>
@@ -16,5 +28,18 @@
     JavaScript has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions. Alongside HTML and CSS, JavaScript
     is one of the core technologies of the World Wide Web.JavaScript enables interactive web pages and is an essential part of web applications. The vast
     majority of websites use it, and major web browsers have a dedicated JavaScript engine to execute it.</p>
+
+    <input id="night_day" type="button" value="night" onclick="
+    var target = document.querySelector('body');
+    if(this.value === 'night') {
+      target.style.backgroundColor='black';
+      target.style.color='white';
+      this.value='day';
+    } else {
+      target.style.backgroundColor='white';
+      target.style.color='black';
+      this.value='night';
+    }
+    ">
   </body>
 </html>
